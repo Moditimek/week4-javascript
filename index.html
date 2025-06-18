@@ -119,7 +119,48 @@
 
 </div>
 
+<!--Lesson 7-->
+    <div class="lesson"> 
+        <h2>Lesson 7:Function Parameters </h2>
+        <p><strong>Concept</strong> Passing data into functions</p>
+
+            <button onclick="addNumbers(10,7)" >Add 10 + 7 </button>
+            <button onclick="addNumbers(26,18)">Subtract 25 + 18</button>
+            <button onclick="addNumbers(1245,562)"> Add 1245 + 562 </button>
+            <div class="output" id="addition">Result will show here.</div>
+
+            <script>
+                function addNumbers(num1,num2){
+                    document.getElementById("addition").innerHTML =num1 + num2
+
+                }
+            </script> 
+             </div>
+ 
+ <!--Lesson 8-->
+ <div class="lesson">
+    <h2>Lesson 8: Functions returning values to be used elsewhere</h2>
+    <p><strong>Concept:</strong> Functions returning values to be used elsewhere</p>
+
+    <button onclick="runlesson8()">Calculate and Display Result</button>
+    <div class="output" id="addition8">Result will show here</div>
+
+    <script>
+        function runlesson8() {
+            document.getElementById("addition8").innerHTML = "10 + 7 = " + addNumberReturn(10, 7);
+        }
+
+        function addNumberReturn(num1, num2) {
+            return num1 + num2;
+        }
+    </script>
+</div>
 
 
-</body>
+
+
+          
+   
+
+</body>  
 </html>
