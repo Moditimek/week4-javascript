@@ -156,8 +156,31 @@
     </script>
 </div>
 
+<!--lesson 9-->
+<div class="lesson">
+    <h2>Lesson 9: Variable Scopes</h2>
+    <p><strong>Concept:</strong> Understanding where variables can be used</p>
 
+    <button onclick="demonstrateScope()">Variable Scope</button>
+    <div class="output" id="scopeOutput">Click button to see variable scope in action</div>
 
+    <script>
+        var globalVariable = "I'm a global variable";
+
+        function demonstrateScope() {
+            var localVariable = "I'm a local variable";
+            document.getElementById("scopeOutput").innerHTML =
+                "Global: " + globalVariable + "<br>" +
+                "Local: " + localVariable + "<br>" +
+                "Local variables only exist inside their function!";
+        }
+
+        function demonstrateLocalScope() {
+            // This will cause an error because localVariable is not in this scope
+            document.getElementById("scopeOutput").innerText = localVariable;
+        }
+    </script>
+</div>
 
           
    
